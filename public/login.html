@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login with oAuth</h2>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Registerd</a></li>
+        <li><a data-toggle="tab" href="#menu1">Facebook</a></li>
+        <li><a data-toggle="tab" href="#menu2">Github</a></li>
+        <li><a data-toggle="tab" href="#menu3">LinkedIn</a></li>
+        <li><a data-toggle="tab" href="#menu4">Google</a></li>
+        <li><a data-toggle="tab" href="#menu5">Bluemix</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <h3>Sign in as a registered user</h3>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <h3>Facebook</h3>
+            <a href="/auth/facebook">Sign in with Facebook</a>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <h3>Github</h3>
+            <a href="/auth/github">Sign in with Github</a>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+            <h3>LinkedIn</h3>
+            <a href="/auth/linkedin">Sign in with LinkedIn</a>
+        </div>
+        <div id="menu4" class="tab-pane fade">
+            <h3>Google</h3>
+            <a href="/auth/google">Sign in with Google</a>
+        </div>
+        <div id="menu5" class="tab-pane fade">
+            <h3>BlueMix</h3>
+            <a href="/auth/bluemix">Sign in with Bluemix</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
