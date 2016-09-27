@@ -49,14 +49,6 @@ router.get('/auth/bluemix/callback', function(req, res, next) {
         failureRedirect: '/error',
     })(req,res,next);
 });
-router.get('/auth/auth/bluemix/callback', function(req, res, next) {
-    // var redirect_url = req.session.originalUrl;
-    passport.authenticate('openidconnect', {
-        successRedirect: '/success',
-        failureRedirect: '/error',
-    })(req,res,next);
-});
-
 // Internal application routes
 router.get('/home', function (req, res, next) {
     console.log('Redirect to HOME');

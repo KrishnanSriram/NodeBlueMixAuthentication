@@ -88,7 +88,7 @@ if(services == null) {
         // callbackURL : callback_url,
         skipUserProfile: true,
         issuer: issuer_id
-    }, function(accessToken, refreshToken, profile, done) {
+    }, function(iss, sub, profile, accessToken, refreshToken, params, done) {
         process.nextTick(function() {
             profile.accessToken = accessToken;
             profile.refreshToken = refreshToken;

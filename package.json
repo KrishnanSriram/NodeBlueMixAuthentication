@@ -6,6 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "cfenv": "1.0.x",
     "cookie-parser": "^1.4.3",
     "express": "4.13.x",
